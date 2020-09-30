@@ -4,10 +4,11 @@ class Network:
     def __init__(self, layers, learning_rate=0.001, dense_activation="sigmoid", 
                  output_activation="sigmoid", loss="mse"):
         """
-        list layers: Enter a list with elements denoting the number of neurons in each layer. 
+        list layers: Enter a list with elements denoting the number of neurons in each layer. \
         The first layer must correspond to the number of inputs and final layer the number of outputs
         
-        str activation: Currently supporting sigmoid, tanh, step and linear
+        str dense_activation & output_activation: Output activation is used for final layer and dense activation \
+        for other layers. Currently supports sigmoid, tanh, linear and step
         
         str loss: Currently supporting mse and log_loss
         
